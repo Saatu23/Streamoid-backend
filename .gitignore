@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# virtualenv
+.venv/
+env/
+venv/
+
+# IDE
+.vscode/
+.idea/
+
+# test/cache/dev
+.pytest_cache/
+coverage.xml
+htmlcov/
+
+# DB / builds / artifacts
+streamoid-backend.tar
+streamoid-backend.zip
+*.log
+
+# OS
+.DS_Store
+Thumbs.db

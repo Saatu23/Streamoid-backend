@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    environment:
+      - PYTHONUNBUFFERED=1
+
+  seed:
+    build: .
+    volumes:
+      - .:/app
+    command: ["python", "scripts/seed_db.py"]
+    depends_on:
+      - app
