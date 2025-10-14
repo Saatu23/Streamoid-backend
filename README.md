@@ -39,9 +39,9 @@ python -m scripts.seed_db
 ```
 4. Run the API server (development):
 ```powershell
-uvicorn main:app --reload --host 127.0.0.1 --port 8000
+uvicorn main:app --reload --host 0.0.0.0 --port 8000
 ```
-Open the Swagger UI at: http://127.0.0.1:8000/docs
+Open the Swagger UI at: http://localhost:8000/docs
 
 API reference (examples shown as you would see in the UI)
 
@@ -131,16 +131,16 @@ pytest -q
 
 Docker - build, save (.tar), load, run
 
-This project supports containerized delivery. Below are the exact commands to build the image locally, save it to a `.tar` archive for delivery, and load/run it on the recipient system.
+This project supports containerized delivery. Below are the exact commands to build the image locally or download from drive, and load/run it on the recipient system.
 
 1) Build the Docker image locally
 ```powershell
 docker build -t streamoid-backend .
 ```
 
-2) Save the image to a `.tar` file (this is the file you can hand over)
+2) Download the same Docker image from below Drive link
 ```powershell
-docker save -o .\streamoid-backend.tar streamoid-backend
+https://drive.google.com/file/d/1wnpET_nL4kFVkMHuLg2Tq-mGnDGCLh9I/view?usp=sharing
 ```
 
 3) Recipient loads the image and runs it
