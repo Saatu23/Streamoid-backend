@@ -24,7 +24,6 @@ Key deliverables
 Quick start (local, development)
 1. Create and activate a virtual environment (PowerShell):
 ```powershell
-cd 'C:\Users\satya\Desktop\Streamoid'
 python -m venv .venv
 . .\.venv\Scripts\Activate.ps1
 ```
