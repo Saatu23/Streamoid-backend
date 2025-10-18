@@ -129,7 +129,7 @@ Testing
 pytest -q
 ```
 
-Docker - build, save (.tar), load, run
+Docker - save (.tar), build, load, run
 
 This project supports containerized delivery. Below are the exact commands to build the image locally or download from drive, and load/run it on the recipient system.
 
