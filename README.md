@@ -133,14 +133,14 @@ Docker - build, save (.tar), load, run
 
 This project supports containerized delivery. Below are the exact commands to build the image locally or download from drive, and load/run it on the recipient system.
 
-1) Build the Docker image locally
-```powershell
-docker build -t streamoid-backend .
-```
-
-2) Download the same Docker image from below Drive link
+1) Download the same Docker image from below Drive link
 ```powershell
 https://drive.google.com/file/d/1wnpET_nL4kFVkMHuLg2Tq-mGnDGCLh9I/view?usp=sharing
+```
+
+2) Build the Docker image locally
+```powershell
+docker build -t streamoid-backend .
 ```
 
 3) Recipient loads the image and runs it
